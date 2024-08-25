@@ -7,7 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+      - uses: hexlet-components/hello-from-hexlet-action@v3
       - run: make setup
       - run: make test
       - name: run lint
         run: make lint
+
